@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
 import urllib
-kn = ’23:43:0102005′
-f = ‘http://maps.rosreestr.ru/ArcGIS/rest/services/CadastreNew/Cadastre/MapServer/exts/GKNServiceExtension/online/parcel/find?cadNum= ‘
-f1 = ‘:%&onlyAttributes=false&y=json’
+kn = '23:43:0128004:'
+f = 'http://maps.rosreestr.ru/arcgis/rest/services/Cadastre/CadastreSelected/MapServer/exts/GKNServiceExtension/online/parcel/find?cadNum= '
+f1 = '*&onlyAttributes=false&Y=json'
 url = f.__str__() + kn.__str__() + f1.__str__()
-urllib.urlretrieve(url, filename=’webpage.html’)
+urllib.urlretrieve(url, filename='webpage.html')
